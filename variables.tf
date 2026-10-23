@@ -32,10 +32,10 @@ variable "frontend_private_subnet_cidr" {
   default     = ["10.0.253.0/24", "10.0.254.0/24", "10.0.255.0/24"]
 }
 
-# variable "fe_instance_type" {
-#   description = "Specifies the AWS instance type."
-#   default     = "t2.micro"
-# }
+variable "fe_instance_type" {
+  description = "Specifies the AWS instance type."
+  default     = "t3.micro"
+}
 
 #############################################################
 # Backend VPC Variables
@@ -66,36 +66,36 @@ variable "backend_private_subnet_cidr" {
   default     = ["192.168.253.0/24", "192.168.254.0/24", "192.168.255.0/24"]
 }
 
-# variable "be_instance_type" {
-#   description = "Specifies the AWS instance type."
-#   default     = "t2.micro"
-# }
+variable "be_instance_type" {
+  description = "Specifies the AWS instance type."
+  default     = "t3.micro"
+}
 
-#############################################################
+############################################################
 # App Variables
-#############################################################
+############################################################
 
-# variable "fe_placeholder" {
-#   default     = "placedog.net"
-#   description = "Image-as-a-service URL. Some other fun ones to try are fillmurray.com, placecage.com, placebeard.it, loremflickr.com, baconmockup.com, placeimg.com, placebear.com, placeskull.com, stevensegallery.com, placedog.net"
-# }
+variable "fe_placeholder" {
+  default     = "placedog.net"
+  description = "Image-as-a-service URL. Some other fun ones to try are fillmurray.com, placecage.com, placebeard.it, loremflickr.com, baconmockup.com, placeimg.com, placebear.com, placeskull.com, stevensegallery.com, placedog.net"
+}
 
-# variable "be_placeholder" {
-#   default     = "placebear.com"
-#   description = "Image-as-a-service URL. Some other fun ones to try are fillmurray.com, placecage.com, placebeard.it, loremflickr.com, baconmockup.com, placeimg.com, placebear.com, placeskull.com, stevensegallery.com, placedog.net"
-# }
+variable "be_placeholder" {
+  default     = "placebear.com"
+  description = "Image-as-a-service URL. Some other fun ones to try are fillmurray.com, placecage.com, placebeard.it, loremflickr.com, baconmockup.com, placeimg.com, placebear.com, placeskull.com, stevensegallery.com, placedog.net"
+}
 
-# variable "placeholder_id" {
-#   default     = "2"
-#   description = "Image-as-a-service URL. Some other fun ones to try are fillmurray.com, placecage.com, placebeard.it, loremflickr.com, baconmockup.com, placeimg.com, placebear.com, placeskull.com, stevensegallery.com, placedog.net"
-# }
+variable "placeholder_id" {
+  default     = "2"
+  description = "Image-as-a-service URL. Some other fun ones to try are fillmurray.com, placecage.com, placebeard.it, loremflickr.com, baconmockup.com, placeimg.com, placebear.com, placeskull.com, stevensegallery.com, placedog.net"
+}
 
-# variable "width" {
-#   default     = "600"
-#   description = "Image width in pixels."
-# }
+variable "width" {
+  default     = "600"
+  description = "Image width in pixels."
+}
 
-# variable "height" {
-#   default     = "400"
-#   description = "Image height in pixels."
-# }
+variable "height" {
+  default     = "400"
+  description = "Image height in pixels."
+}
